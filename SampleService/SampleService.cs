@@ -16,7 +16,7 @@ namespace SampleService
         protected override void OnStart(string[] args)
         {
             Timer timer = new Timer();
-            timer.Interval = 60000;
+            timer.Interval = 30000;
             timer.Elapsed += new ElapsedEventHandler(this.OnTimer);
             timer.Start();
         }
